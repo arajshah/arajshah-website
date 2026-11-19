@@ -1,3 +1,4 @@
+// Root layout for the site: sets the page metadata and renders each page inside html and body.
 import type { Metadata } from 'next';
 import {profile} from '@/content/site';
 import {siteUrl,isPublicSite} from '@/content/url';
