@@ -1,3 +1,4 @@
+// Home page: hero, research, publications, projects, background, and contact sections.
 import Image from 'next/image';
 import {Header} from '@/components/Header';
 import {Sketch} from '@/components/Sketch';
