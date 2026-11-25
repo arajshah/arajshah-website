@@ -1,4 +1,5 @@
 'use client';
+// Site header: wordmark, section links, and a mobile menu toggle.
 import {useState} from 'react';
 const links=[['About','#about'],['Research','#research'],['Publications','#publications'],['Projects','#projects'],['Experience','#experience'],['Contact','#contact']];
 export function Header(){const[open,setOpen]=useState(false);return <header className="site-header"><div className="header-inner"><a className="wordmark" href="#" onClick={()=>setOpen(false)}>Araj Shah<span className="wordmark-dot">.</span></a><button type="button" className="menu-toggle" aria-expanded={open} aria-controls="main-nav" onClick={()=>setOpen(!open)}>{open?'Close':'Menu'}<span aria-hidden="true">{open?'−':'+'}</span></button><nav id="main-nav" aria-label="Main navigation" className={open?'nav-open':''}>{links.map(([label,href])=><a key={href} href={href} onClick={()=>setOpen(false)}>{label}</a>)}<a href="/Araj_Shah_CV.pdf" className="nav-cv">CV <span className="sr-only">(PDF)</span></a></nav></div></header>}
