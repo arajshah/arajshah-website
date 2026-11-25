@@ -1,5 +1,6 @@
 // Single source of content for the site: profile, publications, projects,
 // research, experience, and honors rendered by the homepage.
+// Keep copy in one place: every section of the homepage reads from here.
 export const profile = {
   name: 'Araj Shah',
   email: 'araj_shah@brown.edu',
