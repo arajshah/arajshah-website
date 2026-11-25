@@ -1,3 +1,4 @@
+// Card for one publication: cover image, venue, title, and links.
 import Image from 'next/image';
 import type {Publication} from '@/content/site';
 export function PublicationCard({paper,index}:{paper:Publication;index:number}){return <article className="publication" id={paper.id}>
